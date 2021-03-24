@@ -1,3 +1,9 @@
+#usage of if else statement
+#various coding techniques
+
+#usage of if else statement
+#various coding techniques
+
 print("Welcome Physics Adventurer!")
 
 name = input("what is your name? ")
@@ -12,40 +18,67 @@ if age>=15:
     print("You are old enough to proceed! ")
     print("You are starting with", health, "health points")
 
-    want_to = input("Do you want to proceed? (yes/no) ").lower()
-    if want_to == "yes":
+    want_to_play = input("Do you want to proceed? (yes/no) ").lower()
+    if want_to_play == "yes":
         print("Let's play! Our goal is to reach the Sanctuary, we will find various creatures that will ask us physics topics! Be careful, they might get angry if you answer their questions incorrectly. Let's GO!! ")
 
+#1st question
         print("Oh no! the bridge has a fairy on it, it will let us pass without harm once we answer her question correctly ")
         
+#1st answer 
         first_answer = input("Fairy: A directed quantity, one with both magnitude and direction is called?(vector/magnitude) ").lower()
         if first_answer == "vector":
             print("Fairy: Correct! You may now continue. ")
 
         else:
-            print("Fairy: Oh no, wrong answer I'm sorry *magic*")
+            print("Fairy: Oh no, wrong answer! *casts magic*")
             health -=1
             print("You lost 1 health, your current health is", health)
         
-        
-        to_second = input("Do you still want to continue?(yes/no) ")
-        if to_second == "yes":
+#confirm        
+        confirm = input("Do you still want to continue?(yes/no) ")
+        if confirm == "yes":
             print("Lets go!")
         else: print("Ok then.. See me again if you ever want to ")
         
         print("Oh no.. What!? An angry barbarian is waiting us on that tree! I guess he will ask us physics questions again..")
 
+#2nd question
         print("Barbarian: Fill in the blanks, Newton's ______ law states that, if a body is at rest or moving at a constant speed in a straight line, it will remain at rest or keep moving in a straight line at constant speed unless it is acted upon by a force.(first/second/third) ")
 
+#2nd answer
         second_answer = input("Barbarian: Hrnmnn!? Answer! or else..*swings axe*. ").lower
         if second_answer == "first":
             print("Barbarian: Hmph! Correct, go ahead..")
+
         else:
             print("Barbarian: WRONG HAHA! *slash!* ")
-            print("You lost 1 health")
             health-=1
+            print("You lost 1 health, you now have,", health)
+            
+        print("Boo! we are correct! that thing is stupid ")
         
-        print("Whoooo! that was scary, let's continue! ")
+#confirm
+        confirm = input("Do you still want to continue?(yes/no) ")
+        if confirm == "yes":
+            print("Lets go!")
+        else: print("Ok then.. See me again if you ever want to ")
+        
+#quick jump question to 9th question
+        q_jump = input("Oh look! theres a tunnel that will directly take us near the Sanctuary! But its dangerous >,< that elite ogre can deal 10 damage if your answer wrong! Do you want to go there?(yes/no) ")
+        if q_jump == "yes":
+            print("lets go!! what a brave adventurer you are")
+            
+            
+#third question
+        else: print("Ok, lets go this way!")
+
+        print("A water thingy creature is blocking our way! I bet that thing's question is about fluid dynamics..hehe.. get it? fluid..")
+
+#4th question
+
+#5th question
+
 
     else: print("Ok then.. See me again if you ever want to ")
 
