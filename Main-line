@@ -1,0 +1,52 @@
+print("Welcome Physics Adventurer!")
+
+name = input("what is your name? ")
+age = int(input("What is your age? "))
+
+print("Hello", name, "you are", age, "years old")
+
+health = 10
+
+
+if age>=15:
+    print("You are old enough to proceed! ")
+    print("Starting with", health, "health")
+
+    want_to = input("Do you want to proceed? (yes/no) ").lower()
+    if want_to == "yes":
+        print("Let's play! ")
+
+        print("Oh no! the bridge has a fairy on it, it will let us pass without harm once we answered her question correctly ")
+        
+        first_answer = input("Fairy: A directed quantity, one with both magnitude and direction is called?").lower()
+        if first_answer == "vector":
+            print("Fairy: Correct! You may now continue. ")
+
+        else:
+            print("Fairy: Oh no, wrong answer I'm sorry *magic*")
+            health -=1
+        
+        print("You lost 1 health, your current health is", health)
+
+        to_second = input("Do you still want to continue?")
+        if to_second == "yes":
+            print("Lets go!")
+        else: print("Ok then.. See me again if you ever want to ")
+        
+        print("Oh no.. again!? A barbarian is waiting us on that tree! I guess he will ask us physics questions again..")
+
+        print("Barbarian: Fill in the blanks, Newton's ______ states that, if a body is at rest or moving at a constant speed in a straight line, it will remain at rest or keep moving in a straight line at constant speed unless it is acted upon by a force. ")
+
+        second_answer = input("Barbarian: Hrnmnn!? Answer! or else..*swings axe*. ")
+        if second_answer == "first law":
+            print("Barbarian: Hmph! Correct, go ahead..")
+        else:
+            print("Barbarian: WRONG HAHA! *slash!* ")
+            print("You lost 1 health")
+            health-=1
+        
+        print("Whoooo! that was scary, let's continue! ")
+
+    else: print("Ok then.. See me again if you ever want to ")
+
+else: print(" You aren't old enough to proceed.. ")
