@@ -1,5 +1,5 @@
 # Physics_Quiz_Game
-Simple game
+
 #What is Physics_Quiz_Game?
 # -- It is a simple text game about basic physics topics, this project is created using python
 
